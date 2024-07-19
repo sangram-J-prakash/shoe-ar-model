@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import '@google/model-viewer';
-import model from "../src/Roses.glb";
-import modelios from "../src/Roses.usdz";
+import model from "../src/basketball_shoe.glb"; 
+import modelios from "../src/Basketball_Shoe.usdz";
 import logo from "../src/hdr/Logo.png"
 import hdri from "../src/hdr/illovo_beach_balcony_4k.hdr"
 import { Box, Camera,Forward, Fullscreen, Minimize, X } from 'lucide-react';
