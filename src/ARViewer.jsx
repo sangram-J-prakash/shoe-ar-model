@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '@google/model-viewer';
-import Eiffel_tower from "../src/Eiffel_tower.glb";
-import Eiffel_towerios from "../src/Eiffel_tower.usdz";
+import android from "../src/basketball_shoe.glb";
+import ios from "../src/Basketball_Shoe.usdz";
 import logo from "../src/hdr/Logo.png"
-import logo2 from "../src/logo-paris.png"
+//import logo2 from "../src/logo-paris.png"
 import hdri from "../src/hdr/illovo_beach_balcony_4k.hdr"
 import { Box } from 'lucide-react';
 import "../src/App.css";
@@ -35,8 +35,8 @@ const ARViewer = () => {
         camera-controls
         touch-action="pan-y"
         poster="/public/logo192.png"
-        src={Eiffel_tower}
-        ios-src={Eiffel_towerios}
+        src={android}
+        ios-src={ios}
         // auto-rotate
         style={{ width: '100%', height: '100vh' }}
         shadow-softness="0"
@@ -54,7 +54,7 @@ const ARViewer = () => {
         <a href="https://realitiqxr.com/" rel="noreferrer" target='_blank'>
         <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 start-0 z-3 ms-2 p-0 mt-1 rounded' alt='logo' src={logo} />
       </a>
-        <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 end-0 z-3 me-2 p-0 mt-1 rounded' alt='logo' src={logo2} />
+        {/* <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 end-0 z-3 me-2 p-0 mt-1 rounded' alt='logo' src={logo2} /> */}
         <model-viewer-lights
           shadow-intensity="2"
           environment-image={hdri}
@@ -76,7 +76,7 @@ const Loadingcomp = () => (
     <a href="https://realitiqxr.com/" rel="noreferrer" target='_blank'>
         <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 start-0 z-3 ms-2 p-0 mt-1 rounded' alt='logo' src={logo} />
       </a>
-      <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 end-0 z-3 me-2 p-0 mt-1 rounded' alt='logo' src={logo2} />
+      {/* <img style={{ maxWidth: "120px" }} className='position-absolute bg-dark-subtle pointer top-0 end-0 z-3 me-2 p-0 mt-1 rounded' alt='logo' src={logo2} /> */}
     <MoonLoader color="#6200ea" loading={true} size={150} />
   </div>
 );
